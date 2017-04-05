@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Earthquake App</string>
+    <string name="SjowFullData">sjowFullData</string>
+    <string name="search">sear</string>
+    <string name="call">all</string>
+    <string name="showFullData">Show Full Data</string>
+</resources>
