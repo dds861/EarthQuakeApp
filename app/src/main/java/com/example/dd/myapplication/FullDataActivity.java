@@ -23,6 +23,7 @@ public class FullDataActivity extends AppCompatActivity {
     TextView textView;
     ListView listView;
     ArrayList<HashMap<String, String>> contactList;
+
     HashMap<String, String> contact;
     Intent intent;
     List<String> your_array_list;
@@ -41,9 +42,9 @@ public class FullDataActivity extends AppCompatActivity {
 
         //получили json arraylist
         contactList = (ArrayList<HashMap<String, String>>) intent.getExtras().getSerializable("properties");
-
+        int a = intent.getIntExtra("PositionNumber",0);
         //из arraylist взяли первый item в виде hashmap
-        contact = contactList.get(0);
+        contact = contactList.get(a);
 
         //создали новый arraylist
         your_array_list = new ArrayList<String>();
